@@ -116,8 +116,7 @@ Now we need to build the MySQL image with the following command. We are passing 
 
 docker build --build-arg MYSQL_PWD_INSTALLATION=<YOUR_PASSWORD> -t mydb .
 
-Nina, [11/1/2025 12:34 AM]
-Press enter or click to view image in full size
+
 
 ## Dockerfile for Wordpress:
 
