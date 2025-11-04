@@ -190,8 +190,6 @@ metadata:
 spec:
   group: metrics.k8s.io
   groupPriorityMinimum: 100
-
-Alain Delon Fouefack, [10/29/2025 9:02 PM]
 insecureSkipTLSVerify: true
   service:
     name: metrics-server
