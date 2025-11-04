@@ -10,12 +10,14 @@ pipeline {
         }
         stage('Building docker image') {
             steps {
-                sh 'docker build -t ngouabounina/wordpress:6.3-php8.2-apache .'
+                sh 'docker build -f mysql-dockerfile -t allecfr/mysql:v1 .'
+                sh 'docker build -f wdp-dockerfile -t allecfr/wordpress:v1 .'
             }
         }
         stage('Push to docker registry') {
             steps {
-                sh 'docker push ngouabounina/wordpress:6.3-php8.2-apache'
+                sh 'docker push allecfr/mysql'
+                sh 'docker push allecfr/wordpress:v1'
             }
         }
         stage('Deploying to kubernetes') {
