@@ -5,14 +5,14 @@ metadata:
 spec:
   ingressClassName: nginx
   rules:
-  - host: spring.nfestatech.com
+  - host: all-apps.vibrandt.link
     http:
       paths:
       - pathType: Prefix
         path: "/"
         backend:
           service:
-            name: springapp
+            name: wordpress
             port: 
               number: 80
   
