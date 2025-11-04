@@ -11,9 +11,7 @@ spec:
   selector:
     app: wordpress
     tier: frontend
-  type: LoadBalancer
 ---
-
 apiVersion: apps/v1 
 kind: Deployment
 metadata:
